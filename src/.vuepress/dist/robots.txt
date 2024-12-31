@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://appoint.zhiwei.plus/sitemap.xml

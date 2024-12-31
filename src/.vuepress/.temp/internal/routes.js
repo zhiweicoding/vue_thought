@@ -17,20 +17,3 @@ export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/zhiwei/Documents/online/thought/src/.vuepress/.temp/pages/index.html.js"), meta: {"t":""} }],
   ["/guide/redis/", { loader: () => import(/* webpackChunkName: "guide_redis_index.html" */"/Users/zhiwei/Documents/online/thought/src/.vuepress/.temp/pages/guide/redis/index.html.js"), meta: {"t":"Redis"} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}
