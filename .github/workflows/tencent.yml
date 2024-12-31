@@ -36,7 +36,7 @@ jobs:
     - name: Deploy Files and Restart Services
       run: |
         ssh root@82.157.205.135 << EOF
-          rsync -avz docs/.vuepress/dist /home/thought/vuepress/
+          rsync -avz src/.vuepress/dist /home/thought/vuepress/
 
           # 启动或重启 Docker 服务
           cd /home/thought/etc/
